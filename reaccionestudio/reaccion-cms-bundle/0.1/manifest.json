@@ -11,8 +11,8 @@
     	"ReaccionEstudio\\ReaccionCMSBundle\\ReaccionCMSBundle" : ["all"]
     },
     "container": {
-        "pagination_page_limit": "env(PAGINATION_PAGE_LIMIT)",
-        "encryption_key": "env(ENCRYPTION_KEY)"
+        "pagination_page_limit": "'%env(PAGINATION_PAGE_LIMIT)%'",
+        "encryption_key": "'%env(ENCRYPTION_KEY)%'"
     },
     "env": {
         "PAGINATION_PAGE_LIMIT": "12",
@@ -22,8 +22,7 @@
     	"sh ./vendor/reaccionestudio/reaccion-cms-bundle/Resources/bin/build.sh true" : "script"
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/",
-        "config/packages/fos_user.yaml": "%CONFIG_DIR%/packages/fos_user.yaml"
+        "config/": "%CONFIG_DIR%/"
     },
     "aliases" : ["reaccion-cms-bundle"]
 }

@@ -1,8 +1,0 @@
-# config/packages/twig.yaml
-twig:
-
-    # ...
-    paths:
-        '%kernel.project_dir%/vendor/reaccionestudio/reaccion-cms-bundle/Resources/views' : ReaccionCMSBundle
-    form_themes:
-        - 'bootstrap_4_layout.html.twig'
