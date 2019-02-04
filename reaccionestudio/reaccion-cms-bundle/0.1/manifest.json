@@ -7,8 +7,7 @@
     	"FOS\\JsRoutingBundle\\FOSJsRoutingBundle" : ["all"],
     	"FOS\\UserBundle\\FOSUserBundle" : ["all"],
     	"Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle" : ["all"],
-    	"Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle" : ["all"],
-    	"ReaccionEstudio\\ReaccionCMSBundle\\ReaccionCMSBundle" : ["all"]
+    	"Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle" : ["all"]
     },
     "container": {
         "pagination_page_limit": "'%env(PAGINATION_PAGE_LIMIT)%'",
@@ -16,7 +15,7 @@
     },
     "env": {
         "PAGINATION_PAGE_LIMIT": "12",
-        "ENCRYPTION_KEY": "~"
+        "ENCRYPTION_KEY": "%generate(secret)%"
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
@@ -25,7 +24,7 @@
         "Resources/bin/build.sh": "%BIN_DIR%/reaccion_cms_build.sh"
     },
     "composer-scripts": {
-        "reaccion-cms-build" : "sh ./bin/reaccion_cms_build.sh true"
+        "sh ./bin/reaccion_cms_build.sh" : "script"
     },
     "aliases" : ["reaccion-cms-bundle"]
 }
