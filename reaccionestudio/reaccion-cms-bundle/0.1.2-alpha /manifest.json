@@ -15,7 +15,7 @@
         "encryption_key": "env(ENCRYPTION_KEY)"
     },
     "env": {
-        "PAGINATION_PAGE_LIMIT": 12,
+        "PAGINATION_PAGE_LIMIT": "12",
         "ENCRYPTION_KEY": "~"
     },
     "composer-scripts": {
