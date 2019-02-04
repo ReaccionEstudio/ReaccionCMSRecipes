@@ -12,10 +12,10 @@
     },
     "container": {
         "pagination_page_limit": "env(PAGINATION_PAGE_LIMIT)",
-        "encryption_key": "env(ENCRYPTION_KEY)",
+        "encryption_key": "env(ENCRYPTION_KEY)"
     },
     "env": {
-        "PAGINATION_PAGE_LIMIT": 12,
+        "PAGINATION_PAGE_LIMIT": "12",
         "ENCRYPTION_KEY": "~"
     },
     "composer-scripts": {
