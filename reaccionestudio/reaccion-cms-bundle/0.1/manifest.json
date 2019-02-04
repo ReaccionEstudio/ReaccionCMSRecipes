@@ -19,7 +19,7 @@
         "ENCRYPTION_KEY": "~"
     },
     "composer-scripts": {
-    	"sh ./vendor/reaccionestudio/reaccion-cms-bundle/Resources/bin/build.sh true" : "script"
+        "reaccion-cms-build" : "sh ./bin/reaccion_cms_build.sh true"
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
