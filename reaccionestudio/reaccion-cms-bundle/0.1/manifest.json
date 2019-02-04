@@ -18,14 +18,14 @@
         "PAGINATION_PAGE_LIMIT": "12",
         "ENCRYPTION_KEY": "~"
     },
-    "composer-scripts": {
-        "reaccion-cms-build" : "sh ./bin/reaccion_cms_build.sh true"
-    },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
     },
     "copy-from-package": {
         "Resources/bin/build.sh": "%BIN_DIR%/reaccion_cms_build.sh"
+    },
+    "composer-scripts": {
+        "reaccion-cms-build" : "sh ./bin/reaccion_cms_build.sh true"
     },
     "aliases" : ["reaccion-cms-bundle"]
 }
