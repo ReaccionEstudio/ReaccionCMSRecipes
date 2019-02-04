@@ -1,0 +1,21 @@
+{
+    "bundles": {
+    	"Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle" : ["all"],
+    	"Symfony\\Bundle\\TwigBundle\\TwigBundle" : ["all"],
+    	"Symfony\\Bundle\\MonologBundle\\MonologBundle" : ["all"],
+    	"Knp\\Bundle\\PaginatorBundle\\KnpPaginatorBundle" : ["all"],
+    	"FOS\\JsRoutingBundle\\FOSJsRoutingBundle" : ["all"],
+    	"FOS\\UserBundle\\FOSUserBundle" : ["all"],
+    	"Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle" : ["all"],
+    	"Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle" : ["all"],
+    	"ReaccionEstudio\\ReaccionCMSBundle\\ReaccionCMSBundle" : ["all"]
+    },
+    "container": {
+        "pagination_page_limit": "env(PAGINATION_PAGE_LIMIT)",
+        "encryption_key": "env(ENCRYPTION_KEY)",
+    },
+    "env": {
+        "PAGINATION_PAGE_LIMIT": 12,
+        "ENCRYPTION_KEY": "~"
+    }
+}
