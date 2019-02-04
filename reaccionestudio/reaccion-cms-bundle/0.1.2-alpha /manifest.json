@@ -17,5 +17,11 @@
     "env": {
         "PAGINATION_PAGE_LIMIT": 12,
         "ENCRYPTION_KEY": "~"
-    }
+    },
+    "composer-scripts": {
+    	"sh ./vendor/reaccionestudio/reaccion-cms-bundle/Resources/bin/build.sh true" : "script"
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    },
 }

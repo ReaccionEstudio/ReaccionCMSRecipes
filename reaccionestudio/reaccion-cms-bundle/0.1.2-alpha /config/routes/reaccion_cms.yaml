@@ -1,0 +1,3 @@
+reaccion_cms:
+    resource: "@ReaccionCMSBundle/Resources/config/routing/all.xml"
+    prefix:   /
