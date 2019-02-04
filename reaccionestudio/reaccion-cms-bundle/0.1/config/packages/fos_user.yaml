@@ -7,3 +7,4 @@ fos_user:
         sender_name:    Admin
     service:
         mailer: reaccion_cms.user_mailer
+        
