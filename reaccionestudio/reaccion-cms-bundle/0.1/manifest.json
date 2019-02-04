@@ -24,5 +24,8 @@
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
     },
+    "copy-from-package": {
+        "Resources/bin/build.sh": "%BIN_DIR%/reaccion_cms_build.sh"
+    },
     "aliases" : ["reaccion-cms-bundle"]
 }
