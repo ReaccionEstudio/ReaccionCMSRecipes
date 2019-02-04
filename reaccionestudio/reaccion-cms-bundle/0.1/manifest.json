@@ -22,7 +22,8 @@
     	"sh ./vendor/reaccionestudio/reaccion-cms-bundle/Resources/bin/build.sh true" : "script"
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
+        "config/": "%CONFIG_DIR%/",
+        "config/packages/fos_user.yaml": "%CONFIG_DIR%/packages/fos_user.yaml"
     },
     "aliases" : ["reaccion-cms-bundle"]
 }
